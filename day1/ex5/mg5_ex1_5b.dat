@@ -1,0 +1,7 @@
+generate p p > t t~ j
+output output_pp_ttxj
+launch
+set ebeam1 6500
+set ebeam2 6500
+set ptj 20
+set etaj 4
