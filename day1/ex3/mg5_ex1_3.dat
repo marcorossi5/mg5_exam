@@ -1,0 +1,5 @@
+import sm-full
+generate mu- > e- ve~ vm
+output output_mu_evevm
+launch
+add madanalysis5_parton_card --line_position=-1 plot E(e-[1]) 40 0 0.06 [logY]

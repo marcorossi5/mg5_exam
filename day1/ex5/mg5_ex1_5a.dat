@@ -1,0 +1,8 @@
+generate p p > t t~
+output output_pp_ttx
+launch -n run_Tevatron
+set ebeam1 500
+set ebeam2 500
+launch -n run_LHC
+set ebeam1 6500
+set ebeam2 6500

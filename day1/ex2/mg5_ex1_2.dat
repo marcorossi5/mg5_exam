@@ -1,0 +1,5 @@
+generate p p > t t~
+output output_pp_ttx
+launch output_pp_ttx
+set MH 200
+compute_widths h --output=output_pp_ttx/Cards/param_card.dat
