@@ -1,0 +1,11 @@
+generate e+ e- > b b~ g
+output output_eex_bbxg
+launch
+analysis=OFF
+set mb scan:[1., 1.7, 2.8, 4.6, 7.7, 12.9, 21.5, 35.9, 59.9, 100.]
+# request just a minimum number of events for performance
+# no need to plot histograms
+set nevents 10
+set e_min_pdg {21:0.01}
+launch output_eex_bbxg -i
+print_results --path=./cross_section_eex_bbxg_Egmin0.01.txt --format=short
