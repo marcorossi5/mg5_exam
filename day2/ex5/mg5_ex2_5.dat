@@ -1,0 +1,39 @@
+GF -> xsec = 32.9 +/- 0.2 pb
+import model HC_NLO_X0_UFO-heft
+generate p p > h [QCD]
+output output_pp_H
+launch
+
+# VBF -> xsec = 3.562 +/- 0.024 pb
+import model HC_NLO_X0_UFO
+generate p p > x0 j j $$ w+ w- z / a [QCD]
+output output_pp_qqH
+!./extra_VBF_cmd.sh
+launch
+
+# WH -> xsec = 0.3115 +/- 0.00067 pb
+import model HC_NLO_X0_UFO
+generate p p > x0 l+ vl [QCD]
+add process p p > x0 l- vl~ [QCD]
+output output_pp_WH
+launch
+
+# ZH -> xsec = 0.05075 +/- 0.000073 pb
+import model HC_NLO_X0_UFO
+generate p p > x0 l+ l- / a [QCD]
+output output_pp_ZH
+launch
+
+# ttH -> xsec = 0.4624 +/- 0.001551 pb
+import model HC_NLO_X0_UFO
+generate p p > x0 t t~ [QCD]
+output output_pp_ttH
+launch
+
+# tH -> xsec = 0.06932 +/- 0.00059 pb
+# in 5F scheme
+import model HC_NLO_X0_UFO-no_b_mass
+generate p p > x0 t j $$ w+ w- [QCD]
+add process p p > x0 t~ j $$ w+ w- [QCD]
+output output_pp_tH
+launch

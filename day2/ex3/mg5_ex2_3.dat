@@ -1,0 +1,14 @@
+generate p p > e+ e- [QCD]
+output output_pp_eex
+
+launch -n run_LO
+order=LO
+fixed_order=ON
+shower=OFF
+edit FO_analyse_card --replace_line="FO_ANALYSE" FO_ANALYSE=analysis_HwU_pp_lplm.o
+
+launch -n run_NLO
+order=NLO
+fixed_order=ON
+shower=OFF
+edit FO_analyse_card --replace_line="FO_ANALYSE" FO_ANALYSE=analysis_HwU_pp_lplm.o

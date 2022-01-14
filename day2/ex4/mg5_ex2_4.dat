@@ -1,0 +1,19 @@
+generate  p p > t t~ [QCD]
+output output_pp_ttx
+
+launch -n run_LO
+order=LO
+fixed_order=ON
+shower=OFF
+edit FO_analyse_card --replace_line="FO_ANALYSE" FO_ANALYSE=analysis_HwU_pp_ttx_v2.o
+
+launch -n run_LO+PS
+order=LO
+shower=PYTHIA6Q
+edit shower_card --replace_line="ANALYSE" ANALYSE=py6an_HwU_pp_ttx_v2.o HwU.o
+
+launch -n run_NLO
+order=NLO
+fixed_order=ON
+shower=OFF
+edit FO_analyse_card --replace_line="FO_ANALYSE" FO_ANALYSE=analysis_HwU_pp_ttx_v2.o

@@ -17,7 +17,8 @@ The `mu- > e- ve~ vm` cross section is:
 xsec = 3.016e-19 +/- 6e-22 pb
 ```
 
-The [madanalysis pdf](tag_1_MA5_parton_analysis_analysis1.pdf) file stores the output plots for the requested process.  
+The [madanalysis pdf](tag_1_MA5_parton_analysis_analysis1.pdf) file stores the
+output plots for the requested process.  
 In particular the electron energy spectrum:
 
 ![Electron energy spectrum](electron_energy_spectrum.png)

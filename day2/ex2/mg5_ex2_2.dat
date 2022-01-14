@@ -1,0 +1,15 @@
+define q = u d c s
+define q~ = u~ d~ c~ s~
+
+generate e+ e- > q q~ [QCD]
+output output_eex_qqx
+
+launch -n run_LO
+order = LO
+fixed_order = ON
+shower = OFF
+
+launch -n run_NLO
+order = NLO
+fixed_order = ON
+shower = OFF
