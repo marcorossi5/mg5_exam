@@ -12,7 +12,7 @@ logarithmic behaviour.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex2_1c.dat
+mg5_aMC ex2_1c.mg5
 ```
 
 The script will output the

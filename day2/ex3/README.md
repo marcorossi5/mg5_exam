@@ -10,7 +10,7 @@ Comment and explain the differences between LO and NLO distributions.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex2_3.dat
+mg5_aMC ex2_3.mg5
 ```
 
 - `p p > e+ e-` at LO cross section is: `1496 +\- 5.3 pb`

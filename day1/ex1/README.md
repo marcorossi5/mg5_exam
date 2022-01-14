@@ -7,7 +7,7 @@ Calculate the partial widths of the Z and W bosons and the t quark.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex1_1.dat
+mg5_aMC ex1_1.mg5
 ```
 
 This will produce the results in a directory called `output_pp_ttx`, with the

@@ -7,7 +7,7 @@ Calculate the total width of a Higgs boson of 200 GeV mass.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex1_2.dat
+mg5_aMC ex1_2.mg5
 ```
 
 The `ouput_pp_ttx/Cards/param_card.dat` contains:

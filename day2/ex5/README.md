@@ -10,19 +10,10 @@ Compare with the following plot:
 
 ## Results
 
-
-
-- `p p > H [QCD]`: gluon fusion
-- `p p > q q H`: vector boson fusion
-- `p p > W H`: W associate production
-- `p p > Z H`: Z associate production
-- `p p > t t~ H` : tt-pair
-- `p p > t H`: single-top
-
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex2_5.dat
+mg5_aMC ex2_5.mg5
 ```
 
 The script executes the code in [extra_VBF_cmd.sh](extra_VBF_cmd.sh).
