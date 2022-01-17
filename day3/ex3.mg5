@@ -31,5 +31,5 @@ set ptj 200
 
 # === MadAnalysis ===
 
-!ma5 -s madanalysis_ptj50.mg5
-!ma5 -s madanalysis_ptj200.mg5
+!ma5 -s madanalysis_ptj50.ma5
+!ma5 -s madanalysis_ptj200.mga

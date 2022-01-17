@@ -29,4 +29,3 @@ submit output_ma5_analysis_ptj50
 ! cp output_ma5_analysis_ptj50/Output/SAF/_dm_pj/MadAnalysis5job_0/Histograms/histos.saf ma5/ptj50/histos_dm.saf
 ! cp output_ma5_analysis_ptj50/Output/PDF/MadAnalysis5job_0/MadAnalysis5job_0/main.pdf ma5/ptj50/ma5_ptj50_output.pdf
 ! cp output_ma5_analysis_ptj50/Output/PDF/MadAnalysis5job_0/MadAnalysis5job_0/selection_2.png ma5/ptj50/pT_hist.png
-! python plot_log2r_pt.py ma5/ptj50

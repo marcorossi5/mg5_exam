@@ -152,12 +152,28 @@ aforementioned BSM physics.
 
 ## Analysis Results
 
+The python [script](plot_log2r_pt.py) that runs the analysis, requires the `saft` to be installed on the
+system to run. The package is available from
+[GitHub](https://github.com/marcorossi5/saft) and can be installed through:
+
+```bash
+git clone https://github.com/marcorossi5/saft
+cd saft
+pip install -e .
+```
+
+It is user responsibility to check that `saft` is installed.
+
 The following commands run the analysis:
 
 ```bash
-python plot_log2r_pt.py 
-python plot_log2r_pt.py
+python plot_log2r_pt.py ma5/ptj50
+python plot_log2r_pt.py ma5/ptj200 
 ```
+
+They create plots in the same folder they get from command line.
+
+The following plots show an output example.
 
 - Jet `pT` cut: 50 GeV. `delta K = (10.3 +- 0.7) * 1e-3 GeV^-1`.
 

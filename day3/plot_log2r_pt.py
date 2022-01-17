@@ -57,8 +57,8 @@ def main(dirname):
         - dirname: str, directory name with .saf files
     """
     # importing histograms
-    sm_hist = SAF_File(dirname / "histos_sm.saf").get("pt")
-    dm_hist = SAF_File(dirname / "histos_dm.saf").get("pt")
+    sm_hist = SAF_File(dirname / "histos_sm.saf").get_from_title("pt")
+    dm_hist = SAF_File(dirname / "histos_dm.saf").get_from_title("pt")
     check_histograms(sm_hist, dm_hist)
 
     # compute transverse momentum bin values
