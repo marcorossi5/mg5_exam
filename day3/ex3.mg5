@@ -1,0 +1,35 @@
+# ==== SM ===
+import model DMsimp_s_spin0
+generate p p > vl vl~ j
+output output_pp_vlvlxj
+
+launch -n run_sm_ptj50
+analysis=OFF
+set pdlabel lhapdf
+set lhaid 21050  # MSTW2008lo90cl
+set ptj 50
+
+launch -n run_sm_ptj200
+set ptj 200
+
+# === DM ===
+import model DMsimp_s_spin0
+generate p p > xd xd~ j [QCD]
+output output_pp_xdxdxj
+
+launch output_pp_xdxdxj -n run_dm_ptj50
+analysis=OFF
+set mxd 50
+set my0 200
+set wY0 Auto
+set pdlabel lhapdf
+set lhaid 21050  # MSTW2008lo90cl
+set ptj 50
+
+launch output_pp_xdxdxj -n run_dm_ptj200
+set ptj 200
+
+# === MadAnalysis ===
+
+!ma5 -s madanalysis_ptj50.mg5
+!ma5 -s madanalysis_ptj200.mg5

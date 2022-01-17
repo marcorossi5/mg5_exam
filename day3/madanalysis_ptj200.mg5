@@ -1,0 +1,26 @@
+import output_pp_xdxdxj/bin/internal/ufomodel
+import output_pp_vlvlxj/Events/run_sm_ptj200/unweighted_events.lhe.gz as sm_pj
+import output_pp_xdxdxj/Events/run_dm_ptj200/unweighted_events.lhe.gz as dm_pj
+
+set main.lumi = 0.1
+set main.stacking_method = normalize2one
+
+set sm_pj.type = background
+set sm_pj.backcolor = none
+set sm_pj.linecolor = red
+
+set dm_pj.type = signal
+set dm_pj.backcolor = none
+set dm_pj.linecolor = green
+
+# plot the missing energy
+# plot jet observables: pT, rap, phi, mass
+
+plot MET 251 150 650 [logY]
+plot P(j) 251 150 650 [logY]
+plot PT(j) 251 150 650 [logY]
+
+plot Y(j) 51 -5 5
+plot PHI(j) 41 -4 4
+
+submit output_ma5_analysis_ptj200
