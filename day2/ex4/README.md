@@ -9,7 +9,7 @@ Comment the differences between the distributions.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex2_4.dat
+mg5_aMC ex2_4.mg5
 ```
 
 - `p p > t t~` at LO cross section is: `461.3 +\- 2.3 pb`

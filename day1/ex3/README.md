@@ -8,7 +8,7 @@ electron.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex1_3.dat
+mg5_aMC ex1_3.mg5
 ```
 
 The `mu- > e- ve~ vm` cross section is:

@@ -10,7 +10,7 @@ are two production channels: qqbar and gg.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex1_5a.dat
+mg5_aMC ex1_5a.mg5
 ```
 
 - Tevatron  
@@ -47,7 +47,7 @@ an infinite angular resolution cannot be achieved by any experiment.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex1_5b.dat
+mg5_aMC ex1_5b.mg5
 ```
 
 The `p p > t t~ j` cross section is:

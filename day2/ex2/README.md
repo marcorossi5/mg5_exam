@@ -7,7 +7,7 @@ Calculate the cross section for `e+ e- > q q~` at NLO. Compute the K-factor.
 To obtain the following results, `cd` in the current directory and run:
 
 ```bash
-mg5_aMC mg5_ex2_2.dat
+mg5_aMC ex2_2.mg5
 ```
 
 - `e+ e- > q q~` at LO cross section is: `0.5314 +\- 0.0033 pb`
