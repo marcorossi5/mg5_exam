@@ -39,8 +39,8 @@ fraction `x` and high energy scale `Q^2` (right panel below uses the factorizati
 Find the cross sections for `p p > t t~ j` production at the LHC. Select events
 for which the jet has `pT > 20 GeV` and `|eta| < 4`.
 
-The jet rapidity (hence `delta R`) cut is needed in order to have a IR safe
-observable: when a gluon is emitted collinearly to a top, then a singularity arises.  
+The jet rapidity (hence `delta R`) cut is needed in order to regulate singularities
+that arise when the jet is collinear to the beam.  
 A cut is imposed by default in the madgraph run card, reflecting the fact that
 an infinite angular resolution cannot be achieved by any experiment.
 

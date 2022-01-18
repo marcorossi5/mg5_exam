@@ -1,3 +1,6 @@
-generate p p > t t~
-output output_pp_ttx
-compute_widths z t w+ --output=output_pp_ttx/Cards/param_card.dat
+generate z > all all
+output output_z
+launch output_z
+set ww Auto
+set wt Auto
+set wz Auto

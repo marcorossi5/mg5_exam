@@ -1,2 +1,10 @@
-**/output*
+# python products
 **/py.py
+**/__pycache__
+*.py[cod]
+
+# MG5 products
+
+**/output*
+**/MG5_debug
+**/additional_command

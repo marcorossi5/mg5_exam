@@ -28,8 +28,8 @@ Histrogram distributions are plotted in [LO_histograms.pdf](LO_histograms.pdf)
 and [NLO_histograms.pdf](NLO_histograms.pdf).
 
 Note: several histogram distributions are trivial at the LO due to energy conservation.  
-Examples of such variables are transverse momentum and rapidity of the
-intermediate vector boson (photon or Z), or also the combined azimuth angle of
-the lepton pair in the final state.  
+Examples of such variables are transverse momentum of the intermediate vector
+boson (photon or Z), or also the combined azimuth angle of the lepton pair in
+the final state.  
 At NLO, instead, extra parton radiation leads to non-trivial behaviors of such
 variables.
