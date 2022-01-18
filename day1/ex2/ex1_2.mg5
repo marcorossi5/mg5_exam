@@ -1,5 +1,5 @@
-generate p p > t t~
-output output_pp_ttx
-launch output_pp_ttx
+generate h > all all
+output output_h
+launch output_h
 set MH 200
-compute_widths h --output=output_pp_ttx/Cards/param_card.dat
+set wh Auto
