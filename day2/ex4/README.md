@@ -22,9 +22,7 @@ The K-factor is the ratio between LO+PS and LO results:
 <img src="K_factor_LO_PS.png" alt="K-factor LO+PS LO" width="400"/>
 </div>
 
-Note: the K factor is consistent with 1. Therefore, the shower does not give
-much contribution to the cross section, but it generates unweighted events, as
-opposite to the fixed order computation.
+Note: the K factor is consistent with 1. LO and LO+PS, indeed, should have the same inclusive cross section.
 
 The K-factor is the ratio between NLO and LO results:
 
@@ -57,4 +55,7 @@ The NLO `pT` distribution:
 <img src="pt_NLO.png" alt="pt LO+PS" width=70%/>
 </div>
 
-The distribution is peaked on zero (collinear divergence?).
+The distribution is peaked at zero due to a collinear divergence. Attaching the
+parton shower to the NLO fixed order computation and taking care of the ME+PS
+matching to avoid double counting, it could be possible to obtain a distribution
+resummed to all orders in the coupling costant.
