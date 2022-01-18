@@ -1,6 +1,6 @@
-GF -> xsec = 32.9 +/- 0.2 pb
+# GF -> xsec = 32.9 +/- 0.2 pb
 import model HC_NLO_X0_UFO-heft
-generate p p > h [QCD]
+generate p p > x0 [QCD]
 output output_pp_H
 launch
 
