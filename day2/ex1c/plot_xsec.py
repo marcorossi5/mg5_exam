@@ -1,3 +1,5 @@
+import argparse
+from pathlib import Path
 from time import time as tm
 import numpy as np
 from scipy.optimize import curve_fit
@@ -48,11 +50,18 @@ def f(x, p0, p1):
     """
     return p0 + p1 * np.log(x)
 
-def main():
+def main(fname):
+    """
+    Parameters
+    ----------
+        - fname: str, the input .txt file name
+    """
+    cut = float(fname.stem.split("Egmin")[1])
     mb = np.array([1.0, 1.7, 2.8, 4.6, 7.7, 12.9, 21.5, 35.9, 59.9, 100.0])
     xsec, unc = (
-        np.loadtxt("cross_section_eex_bbxg_Egmin0.01.txt", dtype=str).T[2:4].astype(float)
+        np.loadtxt(fname, dtype=str).T[2:4].astype(float)
     )
+
 
     # fit with SciPy
     p0 = (0.8, -0.3)
@@ -76,7 +85,7 @@ def main():
     ax.errorbar(
         mb,
         xsec,
-        yerr=1e-2,
+        yerr=unc,
         linestyle="",
         marker=".",
         markersize=5,
@@ -90,14 +99,17 @@ def main():
     ax.legend()
     ax.tick_params(which="both", direction="in", top=True, right=True)
     ax.minorticks_on()
-    fig.suptitle(r"$e^+ e^- \rightarrow b \bar{b} g$", y=0.96)
+    fig.suptitle(r"$e^+ e^- \rightarrow b \bar{b} g \quad E_g > %.2e$"%cut, y=0.96)
     ax.set_title(r"Linear interpolation: y = $m \,\log(x)+q$")
     ax.set_ylabel(r"$\sigma$ [pb]")
     ax.set_xlabel(r"$m_b$ [GeV]")
-    plt.savefig("xsec(mb).png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"xsec(mb)_Egmin{cut}.png", dpi=300, bbox_inches="tight")
     plt.close()
 
 if __name__ == "__main__":
     start = tm()
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("fname", type=Path, help="input .txt file name")
+    args = parser.parse_args()
+    main(args.fname)
     print(f"Program done in {tm()-start}s")
